@@ -95,7 +95,7 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #e16d86;
+    color: #fff;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -108,7 +108,7 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #222;
+    color: #fff;
 }
 
 .navbar-default .nav > li>a:hover,
@@ -493,4 +493,25 @@ i {
 
 i:hover {
     color: #c7536c;
+}
+
+.jumbotron {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image: url(../img/doge.jpg);
+    background-color: #34495e;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: -20px;
+}
+
+.jumbotron h1 {
+    text-transform: uppercase;
+    font-weight: 700;
 }

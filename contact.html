@@ -31,12 +31,21 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+        <script>
+            $(function () {
+                $('[data-toggle="popover"]').popover()
+            })
+
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
 
 </head>
 
 <body id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="position:relative; background-color: #34495e;">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -53,7 +62,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#page-top">Home</a>
+                        <a class="page-scroll" href="index.html">Home</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="portfolio.html">Portfolio</a>
@@ -67,8 +76,8 @@
                     <li>
                         <a class="page-scroll" href="resume.html">Resume</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                    <li class="active">
+                        <a class="page-scroll" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -77,190 +86,79 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1><br><br>
-                    Aleida Olvera
-                </h1>
-                <hr>
-                <p>
-                    <big>
-                        A freelance graphic designer &amp; aspiring software engineer,
-                    <br>
-                        eager to change the world - one key and pen stroke at a time.
-                    </big>
-                </p>
-                <a href="about.html" class="btn btn-primary btn-xl page-scroll">Learn More</a>
-                <br><br><br><br>
-            </div>
-        </div>
-    </header>
+    <div class="jumbotron">
+        <h1>Contact Me</h1>   
+    </div>
 
-    <!--section class="bg-primary" id="about">
+    <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 text-center">
-                    <img src="img.png" style="width: 275px; height: 275px; margin-bottom: 25px;">
-                </div>
-                <div class="col-lg-7 text-center">
-                     <h2 class="section-heading">Welcome!</h2>
-                    <hr class="light">
-                    <p class="text-faded">
-                        As a young Latina, I am eager to embark on any adventures that help advance, and inspire other Latinas, in the Human-Computer Interaction field - a blend of Software Engineering and Graphic Design. If you are interested in <a href="sponsorships.html">sponsoring</a> any of my upcoming events, programs (<a href="sparkit.html">SparkIT</a>) or inquire about services - do not hesitate to contact me!
-                    </p>
-                    <a href="contact.html" class="btn btn-default btn-xl">Contact Me!</a>
-                </div>
-
-                <br><br>
-            </div>
-        </div>
-    </section-->
-
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 text-center">
-                    <img src="img/profile.jpg" class="img-thumbnail img-responsive">
-                </div>
-                <div class="col-lg-7 text-center">
-                    <h2 class="section-heading">About Me</h2>
-                    <hr class="primary">
+                <div class="col-md-4 text-center">
+                    <h2 class="section-heading"><b>Let's Connect!</b></h2>
+                    <hr>
                     <p>
 
                     </p>
+                    <p>
+                        <a href="https://linkedin.com/in/AleidaOlvera"><i class="fa fa-2x fa-linkedin"></i></a> &nbsp; 
+                        <a href="https://twitter.com/dejaleida"><i class="fa fa-2x fa-twitter"></i></a> &nbsp;
+                        <a href="https://www.facebook.com/dejaleida"><i class="fa fa-2x fa-facebook"></i></a> &nbsp;
+                        <a href="https://instagram.com/dejaleida"><i class="fa fa-2x fa-instagram"></i></a> &nbsp;
+                        <a href="https://medium.com/@aleidaolvera"><i class="fa fa-2x fa-medium"></i></a>
+                    </p>
+                    <h4 class="section-heading">I'm in need of sponsors for:</h4>
+                    <ul class="list-unstyled section-heading">
+                        <big>
+                            <li>
+                                There are currently no opportunities to sponsor at this time.
+                            </li>
+                        </big>
+                    </ul>
+                </div>
+
+                <div class="col-md-8">
+                    <form class="form-horizontal" role="form" method="post" action="contact-form.php">
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">Name:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-2 control-label">Email:</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="col-sm-2 control-label">Message:</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="4" name="message" placeholder="Type message here..."></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2 text-center">
+                                <input id="submit" name="submit" type="submit" value="Send" class="btn btn-xl btn-primary">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <! Will be used to display an alert to the user>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section-->
-
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Check out my Resume!</h2>
-                <a href="resume-work.pdf" class="btn btn-default btn-xl wow tada">Recruit Me!</a>
-            </div>
-        </div>
-    </aside>
-
-    <!-- section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section -->
-
-    <div id="footer">
+    <footer>
       <div class="container">
         <p class="muted credit">
         <br>
@@ -275,7 +173,7 @@
             </big>
             </span>
         </p>
-    </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
