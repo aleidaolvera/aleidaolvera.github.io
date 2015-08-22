@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+
+
+	<title>VMHS TSA</title>
+	<link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+     <script src="scripts/js-image-slider.js" type="text/javascript"></script>
+     
+      
+     <!--- START JAVA FOR POP UP -->
+     
+     <script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+//
+$('a.poplight[href^=#]').click(function() {
+var popID = $(this).attr('rel'); //Get Popup Name
+var popURL = $(this).attr('href'); //Get Popup href to define size
+var query= popURL.split('?');
+var dim= query[1].split('&');
+var popWidth = dim[0].split('=')[1]; //Gets the first query string value
+$('#' + popID).fadeIn().css({ 'width': Number( popWidth ) }).prepend('<a href="#" class="close"></a>');
+var popMargTop = ($('#' + popID).height() + 80) / 2;
+var popMargLeft = ($('#' + popID).width() + 80) / 2;
+//Apply Margin to Popup
+$('#' + popID).css({
+'margin-top' : -popMargTop,
+'margin-left' : -popMargLeft
+});
+$('body').append('<div id="fade"></div>');
+$('#fade').css({'filter' : 'alpha(opacity=80)'}).fadeIn(); //Fade in the fade layer - .css({'filter' : 'alpha(opacity=80)'})
+return false;
+});
+$('a.close, #fade').live('click', function() {
+$('#fade , .popup_block').fadeOut(function() {
+$('#fade, a.close').remove(); //fade them both out
+});
+return false;
+});
+});
+</script>
+
+     
+     <!-- END JAVA FOR POP UP-->
+     
+     
+</head>
+<body>
+
+	<!-- Start Header -->
+	<div id="header">
+	  <div class="container">
+       		<div id="logo"> <a href="index.html" title="Home"><img src="images/logo-tsa.png" alt="Home"/><h1>Veterans Memorial<br />
+High School</h1>
+</a></div>
+			<hr />
+	<ul id="navigation">
+			<li><a href="dbrief.html" title="Design Brief">Design Brief</a></li>
+			<li><a href="cte.html" title="Veterans CTE">Veterans CTE</a></li>
+            <!-- <ul>
+                	 <li><a href="/cteclass.html" title="CTE Classes"> CTE Classes </a></li>
+                     <li><a href="/stamp.html" title="STAMP"> STAMP Magnet Program </a>
+                    </ul> -->
+
+			<li>
+            <a href="chapter.html" title="Our Chapter">Our Chapter</a></li>
+            <!-- <ul>
+                	<li><a href="/officers.html" title="Officers"> Officers </a></li>
+                    <li><a href="/photos.html" title="Gallery"> Photos </a></li>
+                    </ul> -->
+
+
+            <li> <a href="index.html" title="Home">Home</a> </li>
+            
+		</ul> 
+        
+        
+			<hr />
+<!-- banner background -->
+	
+			<hr />
+	  </div>
+      
+      <!-- begin slideshow -->
+       	<div id="slideshow">
+    <div id="sliderFrame">
+        <div id="slider">
+                <img src="images/index-1.jpg" />
+                <img src="images/index-2.jpg" alt="Join us at our meetings, every Thursday at 8:15 in B-229." />
+                <img src="images/index-3.jpg" alt="Competition season is finally here! Friday, February 21st is TSA Regional Competition, be ready to win!" />
+                
+        </div>
+    </div>
+    	</div>
+        <!-- end slideshow -->
+      </div>  
+	
+    
+  
+    <hr />
+<!-- Start Main Content -->
+	<div id="main" class="container">
+
+	<!-- main content area -->
+   
+    
+    
+		<div id="leftindex">
+        
+        <div class="article_wrapper">
+			<br />
+            <h2>What is TSA?</h2>
+			<p>The Technology Student Association is an organization that promotes leadership and educational growth through engineering, technology, and innovation. The association reinforces these ideologies through competitions and conferences. TSA is made up of 190,000 students across the nation. TSA in integrated with the study of STEM (Science, Technology, Engineering, Mathematics) and takes its principles outside of the classroom. TSA is a diverse organization, which makes every individual experience a positive and personalized influence on their lives. <a href="chapter.html">Visit our chapter's page for more information on TSA.</a>
+</p>
+
+	<h2>TSA Chapter News</h2>
+    <p>The Rio Grande Valley Regional VEX Tournament was held at Veterans Memorial High School on February 8, 2014. Two teams from Veterans Memorial competed in the competition, and both are going to be advancing to the state competition held in Waco in April! The Veterans Memorial Team 2 took 1st Place for the Tournament, 1st for Programming, and 1st for Robot Skills. Go Charger TSA!
+</p>
+	<h2>Meetings</h2>
+    <p>Remember to join us for our Thursday meetings at 8:15 in B-229 classroom. If you are unable to attend you can always stop in during 4th period lunch for a recap.</p>
+<h2>Important Information</h2>
+	<p>To those who are attending the Regional Competition, there will be a meeting regarding transportation, meals, and other information about competition. Be sure to attend this Thursday! </p>
+		</div>
+    	
+        
+		
+		</div>
+	<div id="rightindex">
+        <br />
+    	<img src="images/vex-comp.jpg" height="auto" width="350"/>
+        <br /><br />
+        
+    </div>
+ 	</div>
+<!-- Start Bottom Information -->
+	
+	<div id="bottominfo">
+    	<div class="container">
+			<!-- bottom left information -->
+			<div class="bottomcolumn">
+				<h3>TSA Links</h3>
+				<p>Listed below are important links for all TSA members.</p>
+			<ul class="borderedlist iconlist">
+				<li><a href="http://www.tsaweb.org/" title="National TSA Website">Official TSA Website</a></li>
+				<li><a href="http://www.texastsa.org/" title="Texas TSA">Texas TSA Website</a></li>
+				<li><a href="TSA_HSGuidelines1314.pdf" title="PDF of National Qualifying Events & Rules">Competitive Events & Rules</a></li>
+				</ul>
+			</div>
+	<!-- bottom center information -->
+		<div class="bottomcolumn">
+			<h3>Veterans Memorial CTE</h3>
+			<p>Find out more about our school's Career and Technology program.</p>
+			<ul class="borderedlist iconlist">
+				<li><a href="https://www.pltw.org/" title="Engineering">Engineering Magnet Program</a></li>
+                <li><a href="http://vmhschargers.weebly.com/cte.html" title="Veterans Memorial CTE">Veterans Memorial CTE</a></li>
+				<li><a href="http://bisd.us/stamp/" title="STAMP Program">STAMP Program</a></li>
+			</ul>
+		</div>
+
+        
+<!-- bottom right information -->
+		<div class="bottomcolumn bottomright">
+		<h3> Special Thanks </h3>
+		<p>Consent forms, special thanks, and credit are in the links down below.</p>
+			<ul class="borderedlist iconlist">
+            	<li><a href="consent-form.PDF" title="Consent from those in photos">Consent Forms for Photos</a></li>
+                <li><a href="#?w=700" rel="box10" class="poplight" title="Jazlyn & Christian are responsible for all the photos on this website!">Credit for Photos</a></li>
+                <li><a href="#?w=900" rel="box11" class="poplight" title="Cited Sources">Sources for Pictures & Design Brief</a></li>
+                </ul>
+			</div>
+		<hr />
+	</div>
+</div>
+	
+	
+    
+<!-- Start Footer -->
+	<div id="footer">
+		<div class="container">
+            <p id="copyright">Copyright 2014. All rights reserved.</p>
+            <a id="copyright" href="http://www.bisd.us/" title="Brownsville ISD Wesbite">BISD Website</a>
+            <a id="copyright" href="http://vmhschargers.weebly.com/cte.html" title="CTE Website">CTE Program Website</a>
+            <a id="copyright" href="http://www.bisd.us/stamp" title="STAMP Website">STAMP Program Website</a>
+          	<a id="copyright" href="http://vmhschargers.weebly.com/" title="VMHS Website">Veternas Memorial High School Website</a>
+		</div>
+	</div>
+
+<div id="fix"></div>
+</body>
+
+<div id="box10" class="popup_block">
+
+<h2 style="color: inherit; font-size: 20px;">Jazlyn Perez</h2>
+<p class="boxes">
+<img src="images/jazz.jpg" style="float: left; width: 25%; height: auto; padding-right: 15px;" /><br />
+Jazlyn Perez is apart of the Graphic Design CTE Program at Veterans. She took the time to take the beautiful pictures of our officers and advisors! Thanks Jazz for all your work in setting up the set, cameras, and lights! </p>
+<br /><br /><br /><br /><br />
+
+<h2 style="color: inherit; font-size: 20px;">Christian Albert Martinez</h2>
+<p class="boxes">
+<img src="images/chris.jpg" style="float: left; width: 25%; height: auto; padding-right: 15px;" /><br />
+Christian is our main photographer. He is responsible for most of the pictures on this website. He's always carrying his camera around and snapping pictures when he can. Thanks Christian for giving us permission to use your pictures!
+</div>
+
+
+<div id="box11" class="popup_block">
+<h2 style="font-size: 2.2em;"><center>Works Cited</center></h2>
+<h2 style="font-size: 2em;">TSA Webapge</h2>
+<p class="boxes">
+	<ul class="box_list">
+    <li><a href="http://www.tsaweb.org/Trademark-Policies">TSA Logo</a> - The TSA logo featured on the Veterans CTE page was used in concurrence to their trademark policies. The TSA logo is property of the Technology Students Association.</li>
+    <li><a href="http://www.hosa.org/sites/default/files/HOSA-Brand-Style-Guide.pdf">HOSA Logo</a> - The HOSA logo featured on the Veterans CTE page was used in concurrence to their trademark policies. The TSA logo is property of the Health Occupatians Students of America.</li>
+    <li><a href="http://www.skillsusa.org/about/logos2.shtml">Skills USA Logo</a> - The Skills USA logo featured on the Veterans CTE page was used in concurrence to their trademark policies. The Skills USA logo is property of the Skills USA CTE organization.</li>
+    <li><a href="http://www.bisd.us/cte/">Brownsville CTE Logo</a> and CTE Cluster Images - The Brownsville CTE Logo and CTE Cluster Images were  used in concurrence to their trademark policies. These logos are properties of the Brownvsille CTE Organization and National CTE Organization. The Career Clusters&trade; logo and its extensions are the property of the National Career Technical Education Foundation, as managed by NASDCTE.
+    <a href="http://www.careertech.org/career-clusters/ccresources/user-agreement1.html/event-form/career-clusters-user-agreement/2621#sthash.oazfNcrq.dpuf"> See more information</a></li>
+    <li><a href="http://getumotivated.com/webstore/texas_tsa/#!/~/product/category=3271856&id=11368357">The Texas TSA Longhorn</a> - This picture featured in our chapter page was taken from the Texas TSA Webstore. Although it does not have any sort of copyright rules to it, we would like to state that this picture does not belong to us. This picture is property of the Texas TSA Organization.</li>
+    <li><a href="http://www.bisd.us/stamp/"> STAMP Logo</a> - The picture featured in our Veterans CTE Page was taken from the STAMP official website. Althought there are no copyright rules to it, we would like to state that this picture does not belong to use. This picture is property of the STAMP Magnet Program at BISD.</li>
+</ul>
+<h2 style="font-size: 2em;">Design Brief Webpage</h2>
+	<ul class="box_list">
+    <li>W3C<a href="http://www.w3.org/community/webed/wiki/HTML#HTML_Elements"> HTML</a> & <a href="http://www.w3.org/wiki/CSS/Training">CSS</a> - Our most acreditted priary source comes straight from the creaters themselves! W3 is the organization that regulates the web coding standards.</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web">The MDN (Mozilla's Developer Network)</a> - This website takes over at intermediate CSS and covers JavaScript better than anyone! It comes straight from Mozilla, the developers of the popular web browser Firefox!</li>
+    <li><a href="http://www.webplatform.org/">WebPlatform.org</a> - This source is an excellent website to learn HTML & CSS as well as many other essential tools to web development. </li>
+    
+    </ul>
+
+</p>
+</div>
+
+
+</html>

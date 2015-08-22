@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+    	<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+
+
+	<title>VMHS TSA</title>
+	<link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+     <script src="scripts/js-image-slider.js" type="text/javascript"></script>
+     
+     
+     
+     <!--- START JAVA FOR POP UP -->
+     
+     <script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+//
+$('a.poplight[href^=#]').click(function() {
+var popID = $(this).attr('rel'); //Get Popup Name
+var popURL = $(this).attr('href'); //Get Popup href to define size
+var query= popURL.split('?');
+var dim= query[1].split('&');
+var popWidth = dim[0].split('=')[1]; //Gets the first query string value
+$('#' + popID).fadeIn().css({ 'width': Number( popWidth ) }).prepend('<a href="#" class="close"></a>');
+var popMargTop = ($('#' + popID).height() + 80) / 2;
+var popMargLeft = ($('#' + popID).width() + 80) / 2;
+//Apply Margin to Popup
+$('#' + popID).css({
+'margin-top' : -popMargTop,
+'margin-left' : -popMargLeft
+});
+$('body').append('<div id="fade"></div>');
+$('#fade').css({'filter' : 'alpha(opacity=80)'}).fadeIn(); //Fade in the fade layer - .css({'filter' : 'alpha(opacity=80)'})
+return false;
+});
+$('a.close, #fade').live('click', function() {
+$('#fade , .popup_block').fadeOut(function() {
+$('#fade, a.close').remove(); //fade them both out
+});
+return false;
+});
+});
+</script>
+
+     
+     <!-- END JAVA FOR POP UP-->
+     
+     
+     
+</head>
+<body>
+
+	<!-- Start Header -->
+
+		<div id="header">
+	  <div class="container">
+      		<div id="logo"> <a href="index.html" title="Home"><img src="images/logo-tsa.png" alt="Home"/><h1>Veterans Memorial<br />
+High School</h1>
+</a></div>
+			<hr />
+	<ul id="navigation">
+			<li><a href="dbrief.html" title="Design Brief">Design Brief</a></li>
+			<li><a href="cte.html" title="Veterans CTE">Veterans CTE</a></li>
+            <!-- <ul>
+                	 <li><a href="/cteclass.html" title="CTE Classes"> CTE Classes </a></li>
+                     <li><a href="/stamp.html" title="STAMP"> STAMP Magnet Program </a>
+                    </ul> -->
+
+			<li>
+            <a href="chapter.html" title="Our Chapter">Our Chapter</a></li>
+            <!-- <ul>
+                	<li><a href="/officers.html" title="Officers"> Officers </a></li>
+                    <li><a href="/photos.html" title="Gallery"> Photos </a></li>
+                    </ul> -->
+
+
+            <li> <a href="index.html" title="Home">Home</a> </li>
+            
+		</ul> 
+        <hr />
+
+<!-- banner background -->
+	
+			<hr />
+	  </div>
+      
+      <!-- begin slideshow -->
+       	<div id="slideshow">
+    <div id="sliderFrame">
+        <div id="slider">
+                <img src="images/cte-1.jpg" alt="Veterans Memorial High School offers many unique CTE pathways!" />
+            <img src="images/CTE-2.jpg" alt="STAMP is the magnet program offered at our school. Students in STAMP are constantly challenged with rigorous classes and courses." />
+            <img src="images/cte-3.jpg" alt="TSA is one of the many CTE Competitive Organizations offered at Veterans Memorial." />
+            <img src="images/CTE-4.jpg" alt="Veterans Memorial offers a Fine Arts, Athletics, and JROTC program to engage students alongside their studies." />
+        </div>
+    </div>
+    	</div>
+        <!-- end slideshow -->
+      </div>  
+	
+    
+  
+    <hr />
+<!-- Start Main Content -->
+	<div id="main" class="container">
+    
+     <h3 style="color: #1D50BE; text-align: center; font-size: 2.5em; margin: 0 15px 20px 0;">Programs of Study</h3>
+
+	<!-- main content area -->
+    
+    	<!-- top boxes -->
+      
+        <div id="CTEbutton">
+        <div class="centertext">
+        <a href="#?w=900" rel="box1" class="poplight">
+        Architecture & Construction Technology & Welding </a></div>
+        </div>
+        <div id="CTEbutton">
+        <div class="centertext">
+        <a href="#?w=900" rel="box2" class="poplight">
+        Government  &  Public Administration</a></div>
+        </div>
+        <div id="CTEbutton">
+        <div class="centertext">
+        <a href="#?w=900" rel="box3" class="poplight">
+        Arts, Audio/Video Technology <br /> & Communications</a></div>
+        </div>
+        
+        <!-- middle boxes -->
+        
+        <div id="CTEbutton" class="oneL">
+        <a href="#?w=900" rel="box4" class="poplight">
+        Law, Public Safety & Security</a>
+        </div>
+        <div id="CTEbutton">
+        <div class="centertext">
+        <a href="#?w=900" rel="box5" class="poplight">Science, Technology, Engineering <br /> & Mathematics (STEM) </a></div>
+        </div>
+        <div id="CTEbutton">
+        <div class="centertext">
+        <a href="#?w=900" rel="box6" class="poplight">
+        Business Management <br /> & Administration</a></div>
+        </div>
+        
+      	 <!-- bottom boxes -->
+         
+        <div id="CTEbuttonb" class="oneL">
+        <a href="#?w=900" rel="box7" class="poplight">
+        Human Services</a>
+        </div>
+        <div id="CTEbuttonb" class="oneL">
+        <a href="#?w=900" rel="box8" class="poplight">
+        Information Technology</a>
+        </div>
+        <div id="CTEbuttonb" class="oneL">
+        <a href="#?w=900" rel="box9" class="poplight">
+        Health Science</a>
+        </div>
+   
+    
+    
+    <!--- CTE Organizations -->
+    
+   <div class="ctearticle_wrapper">
+    <h3 style="color: #1D50BE; font-size: 2.5em; margin: 10px 15px;">CTE Organizations</h3>
+   <h2>TSA - Technology Students Association</h2>
+   <p> <img src="images/cte-tsa.jpg" alt="TSA"/>
+   "The Technology Student Association fosters personal growth, leadership, and opportunities in technology, innovation, design, and engineering. Members apply and integrate science, technology, engineering and mathematics concepts through co-curricular activities, competitive events and related programs."	
+   <br /><br />  - Technology Students Association, Mission Statement</p>
+   </div>
+  
+   
+    <div class="ctearticle_wrapper">
+   <h2>HOSA - Health Occupatians Students of America</h2>
+   <p> <img src="images/hosa.jpg" alt="HOSA"/>
+   "The mission of HOSA is to enhance the delivery of compassionate, quality health care by providing opportunities for knowledge, skill and leadership development of all health science technology education students, therefore, helping students to meet the needs of the health care community."
+   <br /><br />
+   -Health Occupations Students of America, Mission Statement.</p>
+   </div>
+   
+   
+    <div class="ctearticle_wrapper">
+   <h2>Skills USA</h2>
+   <p> <img src="images/skillsusa.jpg" alt="Skills USA"/>
+   "The mission of SkillsUSA Texas is to provide opportunities for its members to become successful and productive citizens, employees and leaders. Accomplished through a structured program of leadership training activities, communication and business partnerships."
+   <br /><br />
+   - Skills USA, Mission Satement</p>
+   </div>
+  
+   
+   
+   <!--
+    <div class="ctearticle_wrapper">
+   <h2>Business Professionals of America</h2>
+   <p>text</p>
+   </div>	-->
+     
+   <div class="ctearticle_wrapper">
+   <h2>Magnet Program - STAMP</h2>
+   <p> <img src="images/stamp.jpg" alt="STAMP"/>
+   This college preparatory program opened in August of 2012 at Veterans Memorial High School, and was the first of its kind that Brownsville ISD has seen. The profession-specific program offers challenging courses in Science, Technology (Engineering), Architecture, and Medical Professions.</p>
+   </div>
+      
+    <div class="ctearticle_wrapper">
+   <h2>Student Activities</h2>
+   <p> <img src="images/stu-act.jpg" alt="Student Activies"/>
+   Veterans Memorial Offers a Fine Arts Program which includes band, choir, dance, estudiantina, art, and theatre arts. Along with this Veterans includes a full blown athletic program that involves sports such as: football, volleyball, swimming, golf, tennis, cross country, track, baseball, softball, and soccer. Students at Veterans Memorial can also participate in JROTC, which enables students to get a taste of military occupations, while in high school.</p>
+   </div>
+   
+   
+    
+</div>
+
+
+
+<!-- Start Bottom Information -->
+	
+	<div id="bottominfo">
+    	<div class="container">
+			<!-- bottom left information -->
+			<div class="bottomcolumn">
+				<h3>TSA Links</h3>
+				<p>Listed below are important links for all TSA members.</p>
+			<ul class="borderedlist iconlist">
+				<li><a href="http://www.tsaweb.org/" title="National TSA Website">Official TSA Website</a></li>
+				<li><a href="http://www.texastsa.org/" title="Texas TSA">Texas TSA Website</a></li>
+				<li><a href="TSA_HSGuidelines1314.pdf" title="PDF of National Qualifying Events & Rules">Competitive Events & Rules</a></li>
+				</ul>
+			</div>
+	<!-- bottom center information -->
+		
+        <div class="bottomcolumn">
+			<h3>Veterans Memorial CTE</h3>
+			<p>Find out more about our school's Career and Technology program.</p>
+			<ul class="borderedlist iconlist">
+				<li><a href="https://www.pltw.org/" title="Engineering">Engineering Magnet Program</a></li>
+                <li><a href="http://vmhschargers.weebly.com/cte.html" title="Veterans Memorial CTE">Veterans Memorial CTE</a></li>
+				<li><a href="http://bisd.us/stamp/" title="STAMP Program">STAMP Program</a></li>
+			</ul>
+		</div>
+
+        
+<!-- bottom right information -->
+	<div class="bottomcolumn bottomright">
+		<h3> Special Thanks </h3>
+		<p>Consent forms, special thanks, and credit are in the links down below.</p>
+			<ul class="borderedlist iconlist">
+            	<li><a href="consent-form.PDF" title="Consent from those in photos">Consent Forms for Photos</a></li>
+                <li><a href="#?w=700" rel="box10" class="poplight" title="Jazlyn & Christian are responsible for all the photos on this website!">Credit for Photos</a></li>
+                <li><a href="#?w=900" rel="box11" class="poplight" title="Cited Sources">Sources for Pictures & Design Brief</a></li>
+                </ul>
+			</div>
+		<hr />
+	</div>
+</div>
+	
+    
+<!-- Start Footer -->
+	<div id="footer">
+		<div class="container">
+            <p id="copyright">Copyright 2014. All rights reserved.</p>
+            <a id="copyright" href="http://www.bisd.us/" title="Brownsville ISD Wesbite">BISD Website</a>
+            <a id="copyright" href="http://vmhschargers.weebly.com/cte.html" title="CTE Website">CTE Program Website</a>
+            <a id="copyright" href="http://www.bisd.us/stamp" title="STAMP Website">STAMP Program Website</a>
+          	<a id="copyright" href="http://vmhschargers.weebly.com/" title="VMHS Website">Veternas Memorial High School Website</a>
+		</div>
+	</div>
+   </div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+<div id="fix"></div>
+</body>
+
+
+<div id="box1" class="popup_block">
+	<h2 style="color: inherit; font-size: 20px; color: #006;"><center>Architecture & Construction Technology / Welding</center></h2>
+    <p class="boxes">
+    These two CTE pathways teach you the ins and outs of Architecture and Construction. While one path goes in depth on preparing you to become a welder, and the other gives you a taste of how it will be if you choose to become an architect. 
+    </p>
+    <p class="archtitle">Architecture & Construction Technology</p>
+    <p class="weldtitle">Architecture & Construction Technology <br>(Welding)</br></p>
+    
+    <br /><ul class="arch">
+    <br />
+    <li>Principles of Architecture & Construction</li>
+    <li>Architectural Design</li>
+    <li>Advanced Architectural Design</li>
+    <li>Practicum in Architectural Design</li>
+    </ul>
+    <ul class="weld">
+    <li>Principles of Manufacturing</li>
+    <li>Welding</li>
+    <li>Advanced Welding</li>
+    <li>Practicum in Welding</li>
+    </ul>
+    
+    <br />
+    <!-- <img src="images/arch-blueprint.jpg" style="width: 48%; float: left; height: auto;" />
+    <img src="images/arch-blueprint.jpg" style="width: 48%; float: right; height: auto;" /> -->
+</div>
+ 
+
+<div id="box2" class="popup_block">
+
+<h2 style="color: inherit; font-size: 20px; color: #006;"><center>Government & Public Administration</center></h2>
+<p class="boxes">
+The Government and Public Administration program is one of several fields of study at Veterans Memorial High School. Students in this pathway are offered up to four classes they can take to help prepare them for a future in Government and Public Administration.</p>
+<ul class="courses">
+	<br />
+	<li>Principles of Government & Public Administration</li>
+    <li>Political Science I</li>
+    <li>Political Science II</li>
+    <li>Practicum in Local, State, & Federal Government</li>
+    </ul>
+    <br />
+    <!-- <img src="images/gov.jpg" style="width: 45%; float: right; height: auto;" /> -->
+    
+</div>
+
+<div id="box3" class="popup_block">
+
+<h2 style="color: inherit; font-size: 20px; color: #006;"><center>Arts, Audio/Video Tecnology & Communications</center></h2>
+   <p class="boxes">
+    The Arts, A/V Technology & Communications Cluster is focused on careers in designing, producing, exhibiting, performing, writing, and publishing multimedia content including visual and performing arts and design, journalism, and entertainment services.
+    </p>
+    <p class="audiotitle">Audio Video Technology
+</p>
+    <p class="graphtitle">Graphic Design <br>(Photoshop & Illustrator)</p>
+	<ul class="audio">
+    <li>Principles of Arts, A/V Technology<br />
+& Communication</li>
+    <li>Audio Video Production</li>
+    <li>Advanced Audio and Video</li>
+    <li>Practicum in Audio Video</li>
+    </ul>
+    <ul class="graph">
+    <li>Principles of Arts, A/V Technology<br />
+& Communication</li>
+    <li>Graphic Design Illustration</li>
+    <li>Advanced Graphic Design</li>
+    <li>Practicum in Graphic Design</li>
+    </ul>
+    
+    <br />
+    <!-- <img src="images/gov.jpg" style="width: 45%; float: right; height: auto;" /> -->
+  
+
+</div>
+
+<div id="box4" class="popup_block">
+
+<h2 style="color: inherit; font-size: 20px; color: #006;"><center>Law Public Safety & Security</center></h2>
+<p class="boxes">
+Students interested in law have the opportunity to take five classes that will provide them with the knowledge needed to enter a career in law or law enforcements, when they join the Law, Public Safety, and Security.</p>
+<ul class="courses">
+	<li>Principles of Law, Public Safety, Corrections & Security</li>
+    <li>Law Enforcement</li>
+    <li>Court Systems & Practice</li>
+    <li>Law Enforcement II or Practicum in Law, Public Saftey, Corrections & Security</li>
+	</ ul>
+    <br />
+    <!-- <img src="images/gov.jpg" style="width: 45%; float: right; height: auto;" /> -->
+  
+    
+</div>
+
+<div id="box5" class="popup_block">
+
+<h2 style="color: inherit; font-size: 20px; color: #006;"><center>Science, Technology, Engineering & Mathematics (STEM)</center></h2>
+<p class="boxes">
+For all with an innovative mind geared towards engineering, Veterans offers the Science, Technology, Engineering, and Mathematics program. The classes offered to students instill upon them the knowledge required to enter a field in engineering.</p>
+<ul class="courses">
+	<li>Introduction to Engineering Design</li>
+    <li>Principles of Engineering</li>
+    <li>Digital Electronics</li>
+    <li>Engineering Design & Presentation</li>
+	</ul>
+    <br />
+    <!-- <img src="images/gov.jpg" style="width: 45%; float: right; height: auto;" /> -->
+  
+    
+</div>
+
+<div id="box6" class="popup_block">
+
+<h2 style="color: inherit; font-size: 20px; color: #006;"><center>Business Management & Administration</center></h2>
+<p class="boxes">
+Several adolescents have the dream of running a successful business. The Veterans Business Management and Administration program of study gives students the values and work ethic that will ensure their success in a modern business enviroment.</p>
+<ul class="courses">
+	<br />
+	<li>Principles of Business, Management & Finance</li>
+    <li>Human Resource Management</li>
+    <li>Business Management</li>
+    <li>Practicum in Business Management</li>
+    </ul>
+    <br />
+    <!-- <img src="images/gov.jpg" style="width: 45%; float: right; height: auto;" /> -->
+  
+</div>
+
+<div id="box7" class="popup_block">
+
+<h2 style="color: inherit; font-size: 20px; color: #006;"><center>Human Services (Cosmetology)</center></h2>
+<p class="boxes">
+Veterans Memorial offers an introductory course to business in Cosmetology. For the first two years, students learn how to run their future cosmetology business. In the last two years students travel to the university to get their hands on experience in the world of cosmetology. </p>
+<ul class="courses">
+	<br />
+	<li>Principles of Business, Management & Finance</li>
+    <li>Business Information I or Business Management</li>
+    <li>Cosmetology  I</li>
+    <li>Cosmetology II</li>
+    </ul>
+    <br />
+    <!-- <img src="images/gov.jpg" style="width: 45%; float: right; height: auto;" /> -->
+  
+  </div>
+
+<div id="box8" class="popup_block">
+
+<h2 style="color: inherit; font-size: 20px; color: #006;"><center>Information Technology</center></h2>
+<p class="boxes">
+Each year our society becomes more technologically advanced than the previous year. As more and more businesses implore the use of technology, the field of Information Technology continues to grow. At Veterans, students are invited to take up to four classes as part of the Information Technology program that will shape them into up to date cutting edge workers.</p><ul class="courses">
+	<br />
+	<li>Principles of Information Technology</li>
+    <li>Digital & Interactive Media</li>
+    <li>Web Technology</li>
+    <li>Research in IT Solutions</li>
+    </ul>
+    <br />
+    <!-- <img src="images/gov.jpg" style="width: 45%; float: right; height: auto;" /> -->
+  
+</div>
+
+<div id="box9" class="popup_block">
+
+<h2 style="color: inherit; font-size: 20px; color: #006;"><center>Health Science</center></h2>
+<p class="boxes">
+Many children grow up with the dream of being a doctor. As they get older, though, reality sets in when they realize just how difficult this dream is to attain. Luckily, the Health Science program will give them an edge ver others with the same goal. There are seven classes offered in this pathway that will prepare all students looking to enter the medical field for the years of college ahead of them required to make their childhood dream a reality. </p>
+<ul class="courses">
+	<br />
+	<li>Principles of Health Science</li>
+    <li>Medical Terminology, medical Microbiology, or Pathophysiology</li>
+    <li>Health Science</li>
+    <li>Practicum in Health Science I or Practicum in Health Science II</li>
+    </ul>
+    <br />
+    <!-- <img src="images/gov.jpg" style="width: 45%; float: right; height: auto;" /> -->
+  
+</div>
+
+<div id="box10" class="popup_block">
+
+<h2 style="color: inherit; font-size: 20px;">Jazlyn Perez</h2>
+<p class="boxes">
+<img src="images/jazz.jpg" style="float: left; width: 25%; height: auto; padding-right: 15px;" /><br />
+Jazlyn Perez is apart of the Graphic Design CTE Program at Veterans. She took the time to take the beautiful pictures of our officers and advisors! Thanks Jazz for all your work in setting up the set, cameras, and lights! </p>
+<br /><br /><br /><br /><br />
+
+<h2 style="color: inherit; font-size: 20px;">Christian Albert Martinez</h2>
+<p class="boxes">
+<img src="images/chris.jpg" style="float: left; width: 25%; height: auto; padding-right: 15px;" /><br />
+Christian is our main photographer. He is responsible for most of the pictures on this website. He's always carrying his camera around and snapping pictures when he can. Thanks Christian for giving us permission to use your pictures!
+</div>
+
+
+<div id="box11" class="popup_block">
+<h2 style="font-size: 2.2em;"><center>Works Cited</center></h2>
+<h2 style="font-size: 2em;">TSA Webapge</h2>
+<p class="boxes">
+	<ul class="box_list">
+    <li><a href="http://www.tsaweb.org/Trademark-Policies">TSA Logo</a> - The TSA logo featured on the Veterans CTE page was used in concurrence to their trademark policies. The TSA logo is property of the Technology Students Association.</li>
+    <li><a href="http://www.hosa.org/sites/default/files/HOSA-Brand-Style-Guide.pdf">HOSA Logo</a> - The HOSA logo featured on the Veterans CTE page was used in concurrence to their trademark policies. The TSA logo is property of the Health Occupatians Students of America.</li>
+    <li><a href="http://www.skillsusa.org/about/logos2.shtml">Skills USA Logo</a> - The Skills USA logo featured on the Veterans CTE page was used in concurrence to their trademark policies. The Skills USA logo is property of the Skills USA CTE organization.</li>
+    <li><a href="http://www.bisd.us/stamp/"> STAMP Logo</a> - The picture featured in our Veterans CTE Page was taken from the STAMP official website. Althought there are no copyright rules to it, we would like to state that this picture does not belong to use. This picture is property of the STAMP Magnet Program at BISD.</li>
+    <li><a href="http://www.bisd.us/cte/">Brownsville CTE Logo</a> and CTE Cluster Images - The Brownsville CTE Logo and CTE Cluster Images were  used in concurrence to their trademark policies. These logos are properties of the Brownvsille CTE Organization and National CTE Organization. The Career Clusters&trade; logo and its extensions are the property of the National Career Technical Education Foundation, as managed by NASDCTE.
+    <a href="http://www.careertech.org/career-clusters/ccresources/user-agreement1.html/event-form/career-clusters-user-agreement/2621#sthash.oazfNcrq.dpuf"> See more information</a></li>
+    <li><a href="http://getumotivated.com/webstore/texas_tsa/#!/~/product/category=3271856&id=11368357">The Texas TSA Longhorn</a> - This picture featured in our chapter page was taken from the Texas TSA Webstore. Although it does not have any sort of copyright rules to it, we would like to state that this picture does not belong to us. This picture is property of the Texas TSA Organization.</li>
+    
+</ul>
+<h2 style="font-size: 2em;">Design Brief Webpage</h2>
+	<ul class="box_list">
+    <li>W3C<a href="http://www.w3.org/community/webed/wiki/HTML#HTML_Elements"> HTML</a> & <a href="http://www.w3.org/wiki/CSS/Training">CSS</a> - Our most acreditted priary source comes straight from the creaters themselves! W3 is the organization that regulates the web coding standards.</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web">The MDN (Mozilla's Developer Network)</a> - This website takes over at intermediate CSS and covers JavaScript better than anyone! It comes straight from Mozilla, the developers of the popular web browser Firefox!</li>
+    <li><a href="http://www.webplatform.org/">WebPlatform.org</a> - This source is an excellent website to learn HTML & CSS as well as many other essential tools to web development. </li>
+    
+    </ul>
+
+</p>
+</div>
+
+</div></div></div></div></div></div></div></div></div></div>
+
+</html>
