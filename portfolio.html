@@ -31,12 +31,21 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+        <script>
+            $(function () {
+                $('[data-toggle="popover"]').popover()
+            })
+
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
 
 </head>
 
 <body id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="position:relative; background-color: #34495e;">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -53,13 +62,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#page-top">Home</a>
+                        <a class="page-scroll" href="index.html">Home</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a class="page-scroll" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="honors.html">Honors</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="https://medium.com/@aleidaolvera">Blog</a>
@@ -68,7 +74,7 @@
                         <a class="page-scroll" href="resume.html">Resume</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -77,190 +83,152 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1><br><br>
-                    Aleida Olvera
-                </h1>
-                <hr>
-                <p>
-                    <big>
-                        A freelance graphic designer &amp; aspiring software engineer,
-                    <br>
-                        eager to change the world - one key and pen stroke at a time.
-                    </big>
-                </p>
-                <a href="about.html" class="btn btn-primary btn-xl page-scroll">Learn More</a>
-                <br><br><br><br>
-            </div>
-        </div>
-    </header>
+    <div class="jumbotron">
+        <h1>Services and Portfolio</h1>   
+    </div>
 
-    <!--section class="bg-primary" id="about">
+    <section id="services">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 text-center">
-                    <img src="img.png" style="width: 275px; height: 275px; margin-bottom: 25px;">
-                </div>
-                <div class="col-lg-7 text-center">
-                     <h2 class="section-heading">Welcome!</h2>
-                    <hr class="light">
-                    <p class="text-faded">
-                        As a young Latina, I am eager to embark on any adventures that help advance, and inspire other Latinas, in the Human-Computer Interaction field - a blend of Software Engineering and Graphic Design. If you are interested in <a href="sponsorships.html">sponsoring</a> any of my upcoming events, programs (<a href="sparkit.html">SparkIT</a>) or inquire about services - do not hesitate to contact me!
-                    </p>
-                    <a href="contact.html" class="btn btn-default btn-xl">Contact Me!</a>
-                </div>
-
-                <br><br>
-            </div>
-        </div>
-    </section-->
-
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 text-center">
-                    <img src="img/profile.jpg" class="img-thumbnail img-responsive">
-                </div>
-                <div class="col-lg-7 text-center">
-                    <h2 class="section-heading">About Me</h2>
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Services</h2>
                     <hr class="primary">
-                    <p>
-
-                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-code wow bounceIn text-primary"></i>
+                        <h3>Web Development</h3>
+                        <p class="text-muted">HTML5 &amp; CSS, along with basic PHP for creating a dynamic, interactive website.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-sitemap wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Management &amp; Hosting</h3>
+                        <p class="text-muted">Basic web hosting to ensure your website stays up to date.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-picture-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Graphic Design</h3>
+                        <p class="text-muted">Professional graphic design and photo editting using Adobe Photoshop.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-mobile wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>UI/UX Design</h3>
+                        <p class="text-muted">Unique and vibrant designs for your user interface and experience needs.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- section class="no-padding" id="portfolio">
+    <section class="no-padding bg-default" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="#p1" class="portfolio-box" data-toggle="modal">
                         <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Web Development
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    TSA: Webmaster (2014)
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="#p2" class="portfolio-box" data-toggle="modal">
                         <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Graphic Design/Web Development
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Fox Design &amp; Development
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="#p3" class="portfolio-box" data-toggle="modal">
                         <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    UI/UX Design
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    keepTrack
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="#p4" class="portfolio-box" data-toggle="modal">
                         <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Web Development
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    TSA: Webmaster (2015)
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="#p5" class="portfolio-box" data-toggle="modal">
                         <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Graphic Design
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Cannon Brand Logo
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="#p6" class="portfolio-box" data-toggle="modal">
                         <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    UI/UX Design
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Technology Student Association App
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
+
             </div>
         </div>
-    </section-->
+    </section>
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Check out my Resume!</h2>
-                <a href="resume-work.pdf" class="btn btn-default btn-xl wow tada">Recruit Me!</a>
-            </div>
-        </div>
-    </aside>
-
-    <!-- section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section -->
-
-    <div id="footer">
+    <footer>
       <div class="container">
         <p class="muted credit">
         <br>
@@ -275,7 +243,7 @@
             </big>
             </span>
         </p>
-    </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -290,6 +258,186 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+
+    <!--     MODALS PORTFOLIOS   -->
+    <div class="modal fade" id="p1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Technology Student Association - Webmaster Competition (2014)*</h4>
+              </div>
+              <div class="modal-body">
+                The following website was created for a competition I partook in. It features Veterans Memorial's TSA Chapter, as well as a second website that teaches students in middle school the basics on website development. Below you will find screenshots of the website. If you click the header above you will be redirected to the website to view it yourself, or if you chose to, you can click any of the images below and you will be taken to the actual webpage to view it live.
+                    <br><br>
+                        <center>
+                        <a href="tsa14/index.html"><img src="images/tsa-ss1.png" class="img-responsive" width="600" height="auto"></a>
+                        </center>
+                    <br><br>
+                The website features a simple slideshow as well as an easily accessible naviagtion menu. The website was created using only HTML & CSS, as well as very basic Javascript.
+                    <br><br>
+                <em>* Please Note: This website is the first of the websites I have created and actually published. This is put here just to show how far my website design/development skills have improved since then.</em>
+              </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-md btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="p2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"><a href="fdd/index.html"><i>Fox Design and Development - Icon and Graphic Images</i></a></h4>
+              </div>
+              <div class="modal-body">
+                Below are a collection of icons and images that I created to put in this very website.
+                    <br><br>
+                    <center>
+                    <img src="images/fdd-icons.png">
+                    </center>
+                    <br><br>
+                    The logo on the right was the original FD&amp;D logo, but was then changed to the design on the left to match the website's minimalistic design.
+                    <br><br>
+                    <center>
+                    <img src="images/fdd-logo.png">
+                    <em></em>
+              </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-md btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="p3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"><i>Brownsville Independent School District -  Innovative App Challenge</i></h4>
+              </div>
+              <div class="modal-body">
+                Working with a team, I developed the design for a concept idea for a new innovative app we wanted to create. The idea was to create an application that is run by a leader, who updates a calendar that is sent to all members of the group. Users have the ability to participate in polls, keep track of group events easily, and even submit an event. The screens below show the sign in and sign up screens.
+                <br>
+                <center>
+                    <img src="images/kt-1.png">
+                    <br>
+                    Below you can see the menu and home screen of the application.
+                    <br>
+                    <img src="images/kt-2.png">
+                    <br>
+                    Below you can see the profiles of the organization's calendars you choose to follow, as well as the event submission/creation screen.
+                    <br>
+                    <img src="images/kt-3.png">
+                </center>
+              </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-md btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="p4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"><a href="tsa15/index.html"><i>Technology Student Association - Webmaster Competition (2015)</i></a></h4>
+              </div>
+              <div class="modal-body">
+                The following website was created for the 2015-2016 Regional TSA Competition. This website features a responsive design along with easily accessible documentations on various TSA materials and events.
+                    <br><br>
+                    <center>
+                    <img src="images/t15-1.png" height="auto" width="75%">
+                    </center>
+                    <br><br>
+                    Below you can see the mobile layout of the website. The mobile layout is created to be responsive to whichever device would be viewing it.
+                    <br><br>
+                    <center>
+                    <img src="images/t15-2.png" height="auto" width="50%">
+                    <br><br>
+                    </center>
+                    Below you can see screenshots of the design brief (or solution) portion of the competition.
+                    <br><br>
+                    <center>
+                    <img src="images/t15-3.png" height="auto" width="75%">
+                    </center>
+              </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-md btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="p5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"><i>Cannon App - Logo</i></h4>
+              </div>
+              <div class="modal-body">
+                Working with the startup Cannon, I created the logo that is to be used in their future application. The logo depicts a selfie cannon - the company's basis for their application.
+                <center>
+                    <img src="images/cn-1.png">
+                </center>
+              </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-md btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="p6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"><i>Technology Student Association Application (UI/UX Design)</i></h4>
+              </div>
+              <div class="modal-body">
+                For the coming Texas TSA season, I created the UI Design for a prospective app that will be presented to the board in hopes of becoming a working production in the coming years. Below you can view the multiple example screens of the application.
+                <center>
+                    <div class="row">
+                        <div class="col-sm-12" style="padding-top: 20px;">
+                            <div class="col-md-4 col-sm-6">
+                                <img src="images/tsa-app-1.png" class="img-responsive" height="auto">
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <img src="images/tsa-app-2.png" class="img-responsive"  height="auto">
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <img src="images/tsa-app-3.png" class="img-responsive"  height="auto">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 text-center" style="padding-top: 20px;">
+                            <div class="col-sm-4">
+                                <img src="images/tsa-app-4.png" class="img-responsive" height="auto">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="images/tsa-app-5.png" class="img-responsive" height="auto">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </center>
+              </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-md btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 </body>
 
