@@ -89,7 +89,7 @@ aside {
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: #fff;
+    background-color: #34495e;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -99,7 +99,7 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #fff;
+    color: #ecf0f1;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -112,7 +112,7 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #fff;
+    color: rgba(255,255,255,.7);
 }
 
 .navbar-default .nav > li>a:hover,
@@ -188,8 +188,8 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/doge.jpg);
     background-color: #34495e;
+    background-image: url(../img/mini-doge.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -225,6 +225,10 @@ header .header-content .header-content-inner p {
 @media(min-width:768px) {
     header {
         min-height: 100%;
+        background-image: url(../img/doge.jpg);
+        background-position: left;
+
+
     }
 
     header .header-content {
@@ -505,9 +509,9 @@ i:hover {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/doge.jpg);
+    background-image: url(../img/doge-header.jpg);
     background-color: #34495e;
-    background-position: center;
+    background-position: right;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -521,5 +525,6 @@ i:hover {
 }
 
 .honors-skills {
-
+    font-size: 1.1em;
+    font: sans-serif;
 }
