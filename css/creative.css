@@ -197,6 +197,10 @@ header {
     -o-background-size: cover;
 }
 
+#sparkit {
+    background-image: url(../img/sparkit-head.jpg);
+}
+
 header .header-content {
     position: relative;
     width: 100%;
