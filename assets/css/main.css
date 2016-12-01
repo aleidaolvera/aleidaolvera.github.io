@@ -2319,7 +2319,7 @@
 
 	input[type="submit"],
 	input[type="reset"],
-	input[type="button"],
+	button[type="button"],
 	.button {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -2348,7 +2348,7 @@
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
-		input[type="button"]:hover,
+		button[type="button"]:hover,
 		.button:hover {
 			border-color: #49a6bf;
 			color: #49a6bf !important;
@@ -2356,7 +2356,7 @@
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
-		input[type="button"]:active,
+		button[type="button"]:active,
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
 			border-color: #49a6bf;
@@ -2365,7 +2365,7 @@
 
 		input[type="submit"].icon,
 		input[type="reset"].icon,
-		input[type="button"].icon,
+		button[type="button"].icon,
 		.button.icon {
 			padding-left: 1.35em;
 		}
@@ -2379,7 +2379,7 @@
 
 		input[type="submit"].fit,
 		input[type="reset"].fit,
-		input[type="button"].fit,
+		button[type="button"].fit,
 		.button.fit {
 			display: block;
 			margin: 0 0 1em 0;
@@ -2389,21 +2389,21 @@
 
 		input[type="submit"].small,
 		input[type="reset"].small,
-		input[type="button"].small,
+		button[type="button"].small,
 		.button.small {
 			font-size: 0.8em;
 		}
 
 		input[type="submit"].big,
 		input[type="reset"].big,
-		input[type="button"].big,
+		button[type="button"].big,
 		.button.big {
 			font-size: 1.35em;
 		}
 
 		input[type="submit"].special,
 		input[type="reset"].special,
-		input[type="button"].special,
+		button[type="button"].special,
 		.button.special {
 			background-color: #49a6bf;
 			border-color: #49a6bf;
@@ -2412,7 +2412,7 @@
 
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
-			input[type="button"].special:hover,
+			button[type="button"].special:hover,
 			.button.special:hover {
 				background-color: #5cb0c6;
 				border-color: #5cb0c6;
@@ -2420,7 +2420,7 @@
 
 			input[type="submit"].special:active,
 			input[type="reset"].special:active,
-			input[type="button"].special:active,
+			button[type="button"].special:active,
 			.button.special:active {
 				background-color: #3e98b0;
 				border-color: #3e98b0;
@@ -2430,7 +2430,7 @@
 		input[type="reset"].disabled,
 		input[type="reset"]:disabled,
 		input[type="button"].disabled,
-		input[type="button"]:disabled,
+		button[type="button"]:disabled,
 		.button.disabled,
 		.button:disabled {
 			background-color: #e7e7e7 !important;
