@@ -83,7 +83,7 @@ particlesJS("particles-js", {
      "onresize": {
         "enable": true,
         "density_auto": true,
-        "density_area": 400 // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
+        "density_area": 300 // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
       }
     },
     "modes": {
