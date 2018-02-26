@@ -16,9 +16,19 @@ body {
   /* background-color: #232741; */
 }
 
+.fix {
+  margin-top: 3%;
+}
+
+.fix p {
+  padding-bottom: 10px;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
 .main-card {
     z-index: 1;
-    /* background-color: rgba(224,224,224,0.25); */
+    background-color: rgba(224,224,224,0.25);
     overflow: hidden;
     margin-top: 3%;
     padding: 35px 50px 0 50px;
@@ -43,7 +53,7 @@ body {
   padding-bottom: 10px;
   font-size: 1.25em;
   font-weight: 400;
-  padding: 0 75px;
+  padding: 0 40px;
 }
 
 .text-muted {
